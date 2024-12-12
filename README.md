@@ -1,6 +1,13 @@
 # webpack-module-traverse-plugin
 
-packages： 需要收集的模块
-ignore： 忽略的模块，默认/node_modules/, /^(?!.*\.(jsx?|tsx?)$)/
+`packages：RegExp 需要收集的模块`
 
-返回信息： this.info
+`ignore：RegExp 默认值/node_modules/, /^(?!.*\.(jsx?|tsx?)$)/`
+
+`info: 收集结果信息`
+
+| 属性    | Description | example | default |
+| --------- | ----------- | --------- | --------- |
+| packages：RegExp[]    | target packages pattern      | /antd/ | - |
+| ignore：RegExp[] | ignore packages pattern    | /node_modules/ | [/node_modules/, /^(?!.*\.(jsx?\|tsx?)$)/ ] 
+| info: Map |  - | - | - |
